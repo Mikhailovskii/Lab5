@@ -1,0 +1,17 @@
+N = int(input("Введіть довжину масиву: "))
+
+
+array = []
+
+# Отримуємо елементи масиву від користуача
+for i in range(N):
+    element = int(input(f"Введіть {i + 1}-й елемент масиву: "))
+    array.append(element)
+
+# Виводимо від'ємні елементи у зворотному порядку
+negative_elements = [x for x in array if x < 0]
+negative_elements.reverse()
+
+print("Від'ємні елементи у зворотному порядку:")
+for element in negative_elements:
+    print(element)
