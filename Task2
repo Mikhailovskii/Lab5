@@ -1,0 +1,17 @@
+size = 7
+
+# Ініціалізація двовимірного масиву
+array = []
+
+# Заповнення масиву
+for i in range(size):
+    row = []
+    for j in range(size):
+        row.append(-6 + i + j)
+    array.append(row)
+
+# Виведення масиву на екран
+for i in range(size):
+    for j in range(size):
+        print(f"{array[i][j]:2d}", end=" ")
+    print()  
